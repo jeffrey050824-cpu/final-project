@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1><a href="index.html">Contact</a></h1>
+      <p id="theme-message">Thank you for visiting my portfolio.</p>
+      <button id="theme-button" type="button">Change Theme</button>
+    </header>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <main class="two-column">
+  <section>
+    <h2>Contact Me</h2>
+
+    <img 
+    src="images/snow.jpg"
+    srcset="images/snow-2x.jpg 2x"
+    width="300"
+    height="400"
+    alt="Snow on window">
+
+    <p>
+      Tell me which artwork you like best, and share your thoughts with me.
+    </p>
+
+    <form action="https://formspree.io/f/mykoerqp" method="post">
+      <label for="favorite">Which drawing do you like best?</label>
+      <select id="favorite" name="favorite_artwork" required>
+        <option value="">Choose one artwork</option>
+        <option value="dream">Dream</option>
+        <option value="bittersweet">Good Night</option>
+        <option value="dusk">Quiet City</option>
+        <option value="fire">After the Fire</option>
+        <option value="light">Rainlight</option>
+        <option value="rain">Rain Ripples</option>
+      </select>
+
+      <label for="message">Why do you like this artwork?</label>
+      <textarea id="message" name="message"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Art Process Video</h2>
+
+    <p>
+      This short video shows my drawing process. Now you can have a closer look at how my artwork is created.
+    </p>
+
+    <video controls width="600">
+      <source src="media/art-process.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </section>
+</main>
+
+    <footer>
+      <p>2026 My Art Portfolio</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

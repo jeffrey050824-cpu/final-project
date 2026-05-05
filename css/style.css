@@ -1,0 +1,291 @@
+@font-face {
+  font-family: "Portfolio Font";
+  src: url("../fonts/DancingScript-VariableFont_wght.ttf");
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+  background-color: black;
+  color: #ffffff;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  width: min(100%, 70rem);
+  margin: auto;
+}
+
+header {
+  grid-area: header;
+  padding: 1.5rem 1rem 1rem;
+  font-family: "Portfolio Font", cursive;
+}
+
+nav {
+  grid-area: nav;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+footer {
+  grid-area: footer;
+  padding: 1rem;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+h1, h2, h3, p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+article, section {
+  padding: 1rem;
+  background-color: #111111;
+  color: #ffffff;
+}
+
+video {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+}
+
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #b8a7ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffd166;
+}
+
+a:active {
+  color: #ff6b6b;
+}
+
+h1 > a:link, h1 > a:visited {
+  color: #ffffff;
+  text-transform: none;
+}
+
+h1 a {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+h1 a:hover {
+  color: #ffd166;
+  background-color: #333333;
+}
+
+
+nav a {
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.25rem;
+}
+
+nav a:hover {
+  background-color: #333333;
+}
+
+nav a:active {
+  background-color: #5c4500;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.gallery-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.art-card {
+  background-color: #161616;
+  color: #ffffff;
+}
+
+.art-card h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.art-card p {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.gallery-link:hover .art-card {
+  background-color: #333333;
+}
+
+.gallery-link:hover h3 {
+  color: #ffd166;
+}
+
+.gallery-link:active .art-card {
+  background-color: #3a2f00;
+}
+
+.gallery-link.selected .art-card {
+  background-color: #3a2f00;
+  border: 2px solid #d49b00;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 28rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+  padding: 0.75rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+select,
+textarea,
+input {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #cccccc;
+}
+
+textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+button {
+  width: auto;
+  justify-self: start;
+  cursor: pointer;
+  background-color: #222222;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+button:hover {
+  background-color: #555555;
+}
+
+button:active {
+  background-color: #d49b00;
+  color: #000000;
+}
+
+
+.warm-theme {
+  background-color: #1a120b;
+  color: #ffffff;
+}
+
+.warm-theme section,
+.warm-theme article {
+  background-color: #2a1c12;
+}
+
+.warm-theme nav a:hover {
+  background-color: #5b4636;
+}
+
+.warm-theme button {
+  background-color: #5b4636;
+}
+
+.warm-theme button:hover {
+  background-color: #7a604a;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding-top: 2rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  main.two-column {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

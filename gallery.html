@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1><a href="index.html">Gallery</a></h1>
+      <p id="theme-message">Click an artwork to view more detail</p>
+      <button id="theme-button" type="button">Change Theme</button>
+    </header>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+      <section>
+        <h2>My Artwork</h2>
+        <p>
+          This gallery includes selected drawings from my past works. Each piece reflects a different emotion of mine.
+        </p>
+
+        <div class="gallery-grid">
+          <a class="gallery-link" href="images/bittersweet.jpg" target="_blank">
+            <article class="art-card">
+              <h3>Good Night</h3>
+              <img 
+                src="images/bittersweet.jpg"
+                srcset="images/bittersweet-2x.jpg 2x"
+                width="300"
+                height="400"
+                alt="Rainy window">
+              <p>
+                This piece captures a quiet rainy night through a foggy window. I created this artwork to show the peaceful feeling of looking through a rainy window at night.
+              </p>
+            </article>
+          </a>
+
+          <a class="gallery-link" href="images/dream.jpg" target="_blank">
+            <article class="art-card">
+              <h3>Dream</h3>
+              <img 
+                src="images/dream.jpg"
+                srcset="images/dream-2x.jpg 2x"
+                width="300"
+                height="400"
+                alt="Moonlit dream">
+              <p>
+                I wanted to create a dreamy and peaceful feeling, like watching the world from inside a soft dream.
+              </p>
+            </article>
+          </a>
+
+          <a class="gallery-link" href="images/dusk.jpg" target="_blank">
+            <article class="art-card">
+              <h3>Quiet City</h3>
+              <img 
+                src="images/dusk.jpg"
+                srcset="images/dusk-2x.jpg 2x"
+                width="300"
+                height="400"
+                alt="Dusk city view">
+              <p>
+                This piece shows the view from a train window at dusk. I wanted to capture the quiet moment when the sky is changing colors and
+                the city feels far away.
+              </p>
+            </article>
+          </a>
+
+          <a class="gallery-link" href="images/fire.jpg" target="_blank">
+            <article class="art-card">
+              <h3>After the Fire</h3>
+              <img 
+                src="images/fire.jpg"
+                srcset="images/fire-2x.jpg 2x"
+                width="300"
+                height="400"
+                alt="Burning swing near water">
+              <p>
+                This piece shows an empty swing near the water, surrounded by fire and warm light. I wanted to create a strange and emotional feeling, as if a peaceful memory is slowly disappearing.
+              </p>
+            </article>
+          </a>
+
+          <a class="gallery-link" href="images/light.jpg" target="_blank">
+            <article class="art-card">
+              <h3>Rainlight</h3>
+              <img 
+                src="images/light.jpg"
+                srcset="images/light-2x.jpg 2x"
+                width="300"
+                height="400"
+                alt="Rainy streetlight">
+              <p>
+                This piece shows the feeling of looking up at a streetlight on a rainy night. The lonely sadness in the dark rain contrasts with
+                the warm yellow light.
+              </p>
+            </article>
+          </a>
+
+          <a class="gallery-link" href="images/rain.jpg" target="_blank">
+            <article class="art-card">
+              <h3>Rain Ripples</h3>
+              <img 
+                src="images/rain.jpg"
+                srcset="images/rain-2x.jpg 2x"
+                width="300"
+                height="400"
+                alt="Rain ripples on dark water">
+              <p>
+                This piece shows rain falling into dark water, creating circles that slowly spread outward. I wanted to capture a quiet and heavy
+                mood, like thoughts expanding in the middle of a rainy night.
+              </p>
+            </article>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>2026 My Art Portfolio</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
